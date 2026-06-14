@@ -114,6 +114,7 @@
     "vitest": "^4.1.3"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   }
 }

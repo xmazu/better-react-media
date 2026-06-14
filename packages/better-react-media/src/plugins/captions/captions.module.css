@@ -1,21 +1,37 @@
-@import 'tailwindcss' reference;
-
 .titleContainer {
-  @apply absolute left-0 right-0 p-4 top-0 m-0 font-normal;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .title {
-  @apply text-white text-[125%] font-bold overflow-hidden text-ellipsis whitespace-nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 125%;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .descriptionContainer {
-  @apply absolute left-0 right-0 p-4 bottom-0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .description {
-  @apply overflow-hidden hyphens-auto text-white m-0;
+  margin: 0;
+  overflow: hidden;
+  hyphens: auto;
+  color: #fff;
 }

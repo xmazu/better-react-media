@@ -11,5 +11,7 @@ export default defineConfig({
     '**/*.test.*',
     '**/*.spec.*',
     '**/__tests__/**',
+    '**/.changeset/**',
+    '**/CHANGELOG.md',
   ],
 });

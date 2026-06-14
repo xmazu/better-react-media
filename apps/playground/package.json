@@ -7,7 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "ultracite check",
-    "predev": "bun run --filter better-react-media build"
+    "predev": "bun run --filter better-react-media build",
+    "prebuild": "bun run --filter better-react-media build"
   },
   "dependencies": {
     "@workspace/ui": "workspace:*",
