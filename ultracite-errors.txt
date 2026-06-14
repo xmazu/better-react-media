@@ -1,0 +1,3 @@
+registry/default/lightbox/utils.ts:163:25: error unicorn(prefer-array-index-of): Prefer `indexOf` over `findIndex` for simple equality checks help: Use `indexOf(value)` instead of `findIndex(x => x === value)` for better clarity and performance
+registry/default/lightbox/modules/controller/controller.tsx:205:5: error eslint(no-useless-return): Unnecessary return statement. help: Remove this redundant `return` statement.
+registry/default/lightbox/modules/controller/controller.tsx:265:5: error eslint(no-useless-return): Unnecessary return statement. help: Remove this redundant `return` statement.

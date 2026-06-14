@@ -1,0 +1,10 @@
+@import 'tailwindcss' reference;
+
+.wrapper {
+  @apply w-full h-full flex justify-center items-center content-center;
+}
+
+.interactive {
+  /* marker for zoomed interactive state */
+  display: inherit;
+}

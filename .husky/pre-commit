@@ -1,0 +1,3 @@
+#!/bin/sh
+bun run test
+bun x lint-staged

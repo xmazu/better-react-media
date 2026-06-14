@@ -1,0 +1,35 @@
+[data-lightbox] {
+  --lightbox-color-backdrop: #08090a;
+  --lightbox-color-button: #8a8f98;
+  --lightbox-color-button-active: #f7f8f8;
+  --lightbox-color-button-disabled: #62666d;
+  --lightbox-color-error: #ef4444;
+  --lightbox-z-portal: 9999;
+  --lightbox-fade-duration: 250ms;
+  --lightbox-fade-easing: ease;
+  --lightbox-carousel-gap: 0px;
+  --lightbox-thumbnails-vignette-size: 12%;
+}
+
+@media (min-width: 1200px) {
+  [data-lightbox] {
+    --lightbox-thumbnails-vignette-size: 8%;
+  }
+}
+
+@media (min-width: 2000px) {
+  [data-lightbox] {
+    --lightbox-thumbnails-vignette-size: 5%;
+  }
+}
+
+@keyframes lightbox-delayed-fadein {
+  0%,
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

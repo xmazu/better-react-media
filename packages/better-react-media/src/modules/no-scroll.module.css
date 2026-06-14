@@ -1,0 +1,5 @@
+@import 'tailwindcss' reference;
+
+.noScroll {
+  @apply h-full overflow-hidden overscroll-none;
+}

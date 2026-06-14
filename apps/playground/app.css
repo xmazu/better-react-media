@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+@source "./**/*.{ts,tsx}";
+@source "../../packages/ui/src/**/*.{ts,tsx}";
+
+@import '../../packages/ui/src/styles/linear-theme.css';
+@import '../../packages/ui/src/styles/globals.css';
+@import 'better-react-media/styles.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+@supports (min-height: 100svh) {
+  html,
+  body,
+  #root {
+    min-height: 100svh;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'tailwindcss' reference;
+
+.titleContainer {
+  @apply absolute left-0 right-0 p-4 top-0 m-0 font-normal;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateZ(0);
+}
+
+.title {
+  @apply text-white text-[125%] font-bold overflow-hidden text-ellipsis whitespace-nowrap;
+}
+
+.descriptionContainer {
+  @apply absolute left-0 right-0 p-4 bottom-0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateZ(0);
+}
+
+.description {
+  @apply overflow-hidden hyphens-auto text-white m-0;
+}

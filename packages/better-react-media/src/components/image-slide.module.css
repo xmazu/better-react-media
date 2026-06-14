@@ -1,0 +1,48 @@
+@import 'tailwindcss' reference;
+
+.image {
+  @apply max-w-full max-h-full object-contain touch-none select-none;
+  -webkit-touch-callout: none;
+}
+
+.cover {
+  @apply w-full h-full object-cover;
+}
+
+.loading {
+  @apply opacity-0;
+}
+
+.compositor {
+  @apply min-[800px]:[-webkit-transform:translateZ(0)] min-[800px]:[-webkit-backface-visibility:hidden] min-[800px]:[-webkit-transform-style:preserve-3d];
+}
+
+.status {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-none;
+}
+
+.icon {
+  @apply size-5 motion-reduce:animate-none;
+  color: var(--lightbox-color-button);
+}
+
+.animate {
+  animation:
+    lightbox-spin 1s linear infinite,
+    lightbox-delayed-fadein 1s linear;
+}
+
+.iconError {
+  @apply size-6;
+  color: var(--lightbox-color-error);
+}
+
+@keyframes lightbox-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,5 @@
+@import 'tailwindcss' reference;
+
+.toolbar {
+  @apply absolute top-0 right-0 flex justify-end gap-2 p-2;
+}

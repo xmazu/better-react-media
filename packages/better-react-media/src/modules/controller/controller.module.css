@@ -1,0 +1,6 @@
+@import 'tailwindcss' reference;
+
+.container {
+  @apply absolute inset-0 overflow-hidden outline-none select-none touch-none overscroll-contain flex justify-center items-center content-center;
+  background-color: var(--lightbox-color-backdrop);
+}

@@ -1,0 +1,22 @@
+@import 'tailwindcss' reference;
+
+.carousel {
+  @apply flex shrink-0 h-full items-stretch justify-center content-center;
+}
+
+.hasGap {
+  gap: var(--lightbox-carousel-gap);
+}
+
+.slide {
+  @apply relative flex-1 overflow-hidden flex justify-center items-center content-center;
+}
+
+.current {
+  /* marks the active carousel slide */
+  display: inherit;
+}
+
+.slidePlaceholder {
+  @apply relative flex-1 overflow-hidden;
+}

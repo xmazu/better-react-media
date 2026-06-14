@@ -1,0 +1,41 @@
+@import 'tailwindcss' reference;
+
+.button {
+  @apply inline-flex shrink-0 items-center justify-center rounded-md text-sm font-medium transition-colors outline-none select-none disabled:pointer-events-none disabled:opacity-50 border-0 cursor-pointer p-0;
+  -webkit-tap-highlight-color: transparent;
+  color: var(--lightbox-color-button);
+  background: transparent;
+}
+
+.button:hover {
+  color: var(--lightbox-color-button-active);
+  background: transparent;
+}
+
+.button:focus {
+  color: var(--lightbox-color-button);
+}
+
+.button:focus-visible {
+  color: var(--lightbox-color-button-active);
+  outline: 2px solid
+    color-mix(in srgb, var(--lightbox-color-button-active) 40%, transparent);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  color: var(--lightbox-color-button-disabled);
+  @apply opacity-100;
+}
+
+.button svg:not([class*='size-']) {
+  @apply size-6;
+}
+
+.ghost {
+  @apply bg-transparent;
+}
+
+.icon {
+  @apply size-8;
+}

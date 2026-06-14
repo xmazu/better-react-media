@@ -1,0 +1,13 @@
+@import 'tailwindcss' reference;
+
+.navigation {
+  @apply absolute top-1/2 z-10 -translate-y-1/2 active:-translate-y-1/2 py-[calc(0.5rem+1rem)] px-[calc(0.5rem+0.5rem)];
+}
+
+.prev {
+  @apply left-0;
+}
+
+.next {
+  @apply right-0;
+}

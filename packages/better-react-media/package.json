@@ -1,0 +1,119 @@
+{
+  "name": "better-react-media",
+  "version": "0.1.0",
+  "description": "Modern, plugin-based React lightbox built for performance, accessibility, and customization.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./plugins/captions": {
+      "types": "./dist/plugins/captions/index.d.ts",
+      "import": "./dist/plugins/captions/index.js",
+      "default": "./dist/plugins/captions/index.js"
+    },
+    "./plugins/counter": {
+      "types": "./dist/plugins/counter/index.d.ts",
+      "import": "./dist/plugins/counter/index.js",
+      "default": "./dist/plugins/counter/index.js"
+    },
+    "./plugins/download": {
+      "types": "./dist/plugins/download/index.d.ts",
+      "import": "./dist/plugins/download/index.js",
+      "default": "./dist/plugins/download/index.js"
+    },
+    "./plugins/fullscreen": {
+      "types": "./dist/plugins/fullscreen/index.d.ts",
+      "import": "./dist/plugins/fullscreen/index.js",
+      "default": "./dist/plugins/fullscreen/index.js"
+    },
+    "./plugins/inline": {
+      "types": "./dist/plugins/inline/index.d.ts",
+      "import": "./dist/plugins/inline/index.js",
+      "default": "./dist/plugins/inline/index.js"
+    },
+    "./plugins/slideshow": {
+      "types": "./dist/plugins/slideshow/index.d.ts",
+      "import": "./dist/plugins/slideshow/index.js",
+      "default": "./dist/plugins/slideshow/index.js"
+    },
+    "./plugins/thumbnails": {
+      "types": "./dist/plugins/thumbnails/index.d.ts",
+      "import": "./dist/plugins/thumbnails/index.js",
+      "default": "./dist/plugins/thumbnails/index.js"
+    },
+    "./plugins/zoom": {
+      "types": "./dist/plugins/zoom/index.d.ts",
+      "import": "./dist/plugins/zoom/index.js",
+      "default": "./dist/plugins/zoom/index.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "dev": "vite build --watch",
+    "test": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "ci": "bun run build && bun run test",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "react",
+    "lightbox",
+    "image-gallery",
+    "carousel",
+    "modal",
+    "accessibility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmazu/better-react-media.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xmazu/better-react-media/issues"
+  },
+  "homepage": "https://github.com/xmazu/better-react-media#readme",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "@tailwindcss/vite": "^4.3.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.1.3",
+    "@vitest/ui": "^4.1.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "jsdom": "^29.1.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10",
+    "vitest": "^4.1.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

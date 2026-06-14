@@ -1,0 +1,19 @@
+@import 'tailwindcss' reference;
+
+.portal {
+  @apply fixed inset-0 m-0 max-h-none max-w-none h-full w-full border-0 bg-transparent overflow-hidden opacity-0 pointer-events-auto transition-opacity motion-reduce:transition-none p-0;
+  z-index: var(--lightbox-z-portal);
+}
+
+.portal::backdrop {
+  @apply bg-transparent;
+}
+
+.visible {
+  @apply opacity-100;
+}
+
+.noScrollPadding {
+  /* marker class for fixed-element scrollbar padding */
+  display: inherit;
+}
